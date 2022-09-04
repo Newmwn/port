@@ -1,5 +1,5 @@
 *{  
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 body{
@@ -8,16 +8,17 @@ body{
 
 .logo{
     font-size: 7vw;
-    font-family:fantasy;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 800;
     color: black;
-   animation: pulse 0.01s infinite;
+   animation: pulse 4s infinite;
 }
 
   @keyframes pulse{
     0%{text-shadow: -2px -2px white;}
     25%{text-shadow: 2px -2px white;}
     50%{text-shadow: 2px 2px white;}
-    75%{text-shadow: -30px 30px white;}
+    75%{text-shadow: -2px 2px white;}
     100%{text-shadow: -2px -2px white;}
   }
 
@@ -42,15 +43,28 @@ a:hover{
 }
 
 .fs{
-    font-family: 'Courier New', Courier, monospace;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 8vw;
 }
 
 .navigation{
   z-index: 1;
+  background-color: black;
 }
 
 .presentation{
-  padding-left: 18vw;
+  margin-left: 16.5vw;
   height: 100000px;
+  border-left: 1px solid white;
+  position: absolute;
+}
+
+@media only screen and (max-width:576px) {
+  .presentation{
+    margin: 0px;
+    margin-top: 40vh;
+    border-left-color: black;
+  }
+
+
 }
