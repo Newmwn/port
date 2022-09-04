@@ -46,10 +46,11 @@ a:hover{
     font-size: 8vw;
 }
 
-.p{
-  padding-left: 18vw;
+.navigation{
+  z-index: 1;
 }
 
-.z{
-  z-index: 1;
+.presentation{
+  padding-left: 18vw;
+  height: 100000px;
 }
