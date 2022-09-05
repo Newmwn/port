@@ -13,7 +13,7 @@
             />
         <link rel="stylesheet" href="./style.css" />
     </head>
-    <body>
+    <body onload="myFunc()">
         <div class="d-flex justify-content-end position-fixed w-100 tButton">
             <button
                 class="btn btn-dark tButton"
@@ -79,16 +79,17 @@
             </div>
         </div>
         <script>
-            window.addEventListener('resize', function(event){
-            var newWidth = window.innerWidth;
-            var newHeight = window.innerHeight; 
-            });
-            window.addEventListener("resize", () => {
-            var x = document.getElementById("navigation");
+            
+            function myFunc(){
+                var x = document.getElementById("navigation");
             if(window.innerWidth<=767) x.classList.add("collapse")
             else x.classList.remove("collapse");
+            }
+
+            window.addEventListener("resize", () => {
+                myFunc();
             });
-     
+            
     </script>
         <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
         <script
