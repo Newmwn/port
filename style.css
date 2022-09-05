@@ -59,12 +59,20 @@ a:hover{
   position: absolute;
 }
 
-@media only screen and (max-width:576px) {
-  .presentation{
-    margin: 0px;
-    margin-top: 40vh;
-    border-left-color: black;
-  }
-
-
+.tButton{
+  display: none; 
+  z-index: 1;
 }
+
+@media only screen and (max-width:767px) {
+ .presentation{
+  margin: 0;
+  border: none;
+ }
+ .tButton{
+  display: block;
+ }
+}
+
+
+

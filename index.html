@@ -1,28 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>A.D WDeveloper</title>
-        <link rel="stylesheet"
+        <link
+            rel="stylesheet"
             href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
             integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-            crossorigin="anonymous">
-        <link rel="stylesheet" href="./style.css">
+            crossorigin="anonymous"
+            />
+        <link rel="stylesheet" href="./style.css" />
     </head>
     <body>
+        <div class="d-flex justify-content-end position-fixed w-100 tButton">
+            <button
+                class="btn btn-dark tButton"
+                type="button"
+                data-toggle="collapse"
+                data-target="#navigation"
+                aria-expanded="false"
+                aria-controls="collapseExample">
+                ...
+            </button>
+        </div>
         <div>
             <div class="row m-0">
-                <div class="p-0 m-0 col-12 col-sm-2 col-lg-2 text-center position-fixed navigation text-white">
-                    <ul class=" list-unstyled">
+                <div id="navigation"
+                    class="p-0 m-0 col-sm-12 col-md-2 text-center navigation text-white">
+                    <ul class="list-unstyled">
                         <li class="logo mb-1">A.D</li>
                         <li class="mb-5">André Dias</li>
                         <a href="#about"><li class="button">About Me</li></a>
                         <a href=""><li class="button">My Contacts</li></a>
                     </ul>
                 </div>
-                <div class="mb-5 col-12 col-sm-10 col-lg-10 presentation">
+                <div class="mb-5 col-sm-12 col-md-10 presentation">
                     <div id="presentation">
                         <p class="font-italic">console.log('</p>
                         <p class="text-white fs pl-5">Hello World!</p>
@@ -31,40 +45,51 @@
                         <p>'+'\n'+'</p>
                         <p class="text-white pl-5">A Web Developer Student</p>
                         <p class="font-italic">');</p>
-                        <br>
-                        <br>
-                        <br>
-                        <br>
-                        <br>
-                        <br>
-                        <br>
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
                     </div>
-                    <div id="about" class=" pt-5 col-12 col-lg-8 text-justify mt-5
+                    <div
+                        id="about"
+                        class="pt-5 col-12 col-lg-8 text-justify mt-5
                         text-white">
-                        <h4>About Me </h4>
+                        <h4>About Me</h4>
                         <p>
-                            Hi everybody, i'm André, natural from Braga, Portugal, and i
-                            started to study WebDev last year. <br>
+                            Hi everybody, i'm André, natural from Braga,
+                            Portugal, and i
+                            started to study WebDev last year. <br />
                             Regardless of having only professional experience in
-                            the Industrial production sector, i always had
-                            a huge interest and inclination for IT areas. In
-                            order to change my career, i've being focus my
-                            education
-                            on the field of Web Development, through
-                            higher education and online courses, hoping to, one
-                            day,
-                            become an IT professional</p>
+                            the
+                            Industrial production sector, i always had a huge
+                            interest and
+                            inclination for IT areas. In order to change my
+                            career, i've being
+                            focus my education on the field of Web Development,
+                            through higher
+                            education and online courses, hoping to, one day,
+                            become an IT
+                            professional.
+                        </p>
                     </div>
                 </div>
             </div>
-
         </div>
         <script>
-            function myfunc(){
-               var x = document.getElementById("presentation")
-               x.style.display="none";
-            }
-        </script>
+            window.addEventListener('resize', function(event){
+            var newWidth = window.innerWidth;
+            var newHeight = window.innerHeight; 
+            });
+            window.addEventListener("resize", () => {
+            var x = document.getElementById("navigation");
+            if(window.innerWidth<=767) x.classList.add("collapse")
+            else x.classList.remove("collapse");
+            });
+     
+    </script>
         <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
         <script
             src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
