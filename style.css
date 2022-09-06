@@ -3,15 +3,20 @@
 }
 
 body{
-    background-color: black;
+    background-color: rgb(38, 38, 38);
 }
 
 .logo{
     font-size: 7vw;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-weight: 800;
-    color: black;
+    color: rgb(20, 17, 17);
    animation: pulse 4s infinite;
+   -moz-transform: rotate(343deg);
+-webkit-transform: rotate(343deg);
+-o-transform: rotate(343deg);
+-ms-transform: rotate(343deg);
+transform: rotate(343deg);
 }
 
   @keyframes pulse{
@@ -49,7 +54,7 @@ a:hover{
 
 .navigation{
   z-index: 1;
-  background-color: black;
+  background-color: rgb(39, 39, 39);
 }
 
 .presentation{
@@ -74,5 +79,9 @@ a:hover{
  }
 }
 
+.position{
+  position: absolute;
+  bottom: 0;
+}
 
 

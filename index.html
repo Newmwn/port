@@ -28,7 +28,7 @@
         <div>
             <div class="row m-0">
                 <div id="navigation"
-                    class="p-0 m-0 col-sm-12 col-md-2 text-center navigation text-white">
+                    class="p-0 m-0 col-sm-12 col-md-2 text-center navigation text-white position-fixed">
                     <ul class="list-unstyled">
                         <li class="logo mb-1">A.D</li>
                         <li class="mb-5">André Dias</li>
@@ -37,21 +37,19 @@
                     </ul>
                 </div>
                 <div class="mb-5 col-sm-12 col-md-10 presentation">
-                    <div id="presentation">
-                        <p class="font-italic">console.log('</p>
-                        <p class="text-white fs pl-5">Hello World!</p>
-                        <p>'+'\n'+'</p>
-                        <p class="text-white fs pl-5">I'm André</p>
-                        <p>'+'\n'+'</p>
-                        <p class="text-white pl-5">A Web Developer Student</p>
-                        <p class="font-italic">');</p>
-                        <br />
-                        <br />
-                        <br />
-                        <br />
-                        <br />
-                        <br />
-                        <br />
+                    <div class="row">
+                        <div id="presentation" class="col-7">
+                            <p class="font-italic text-danger">console.log('</p>
+                            <p class="text-white fs pl-5">Hello World!</p>
+                            <p class="font-italic text-danger">'+'\n'+'</p>
+                            <p class="text-white fs pl-5">I'm André</p>
+                            <p class="font-italic text-danger">'+'\n'+'</p>
+                            <p class="text-white pl-5">A Web Developer Student</p>
+                            <p class="font-italic text-danger">');</p>
+                        </div>
+                        <div class="col-5 d-flex justify-content-center position-relative">
+                            <img src="./myPic.jpg" alt="" class="w-75 rounded-circle position">
+                        </div>
                     </div>
                     <div
                         id="about"
