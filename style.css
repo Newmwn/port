@@ -1,87 +1,100 @@
-*{  
+* {
   scroll-behavior: smooth;
 }
 
-body{
-    background-color: rgb(38, 38, 38);
+body {
+  background-color: rgb(38, 38, 38);
 }
 
-.logo{
-    font-size: 7vw;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-weight: 800;
-    color: rgb(20, 17, 17);
-   animation: pulse 4s infinite;
-   -moz-transform: rotate(343deg);
--webkit-transform: rotate(343deg);
--o-transform: rotate(343deg);
--ms-transform: rotate(343deg);
-transform: rotate(343deg);
+.logo {
+  font-size: 7vw;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-weight: 800;
+  color: rgb(20, 17, 17);
+  animation: pulse 4s infinite;
+  transform: rotate(343deg);
 }
 
-  @keyframes pulse{
-    0%{text-shadow: -2px -2px white;}
-    25%{text-shadow: 2px -2px white;}
-    50%{text-shadow: 2px 2px white;}
-    75%{text-shadow: -2px 2px white;}
-    100%{text-shadow: -2px -2px white;}
+@keyframes pulse {
+  0% {
+    text-shadow: -2px -2px white;
   }
-
-  .button{
-    border-collapse: collapse;
-    border-top: 1px solid gray;
-    border-bottom: 1px solid gray;
-    color: gray;
-    font-size: 18px;
-    text-decoration: none;
-    padding: 8px;
+  25% {
+    text-shadow: 2px -2px white;
   }
-
-  .button:hover{
-    background-color: white;
-    color: black;
-    text-decoration: none;
+  50% {
+    text-shadow: 2px 2px white;
   }
-
-a:hover{
-    text-decoration: none;
+  75% {
+    text-shadow: -2px 2px white;
+  }
+  100% {
+    text-shadow: -2px -2px white;
+  }
 }
 
-.fs{
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 8vw;
+.button {
+  border-collapse: collapse;
+  border-top: 1px solid gray;
+  border-bottom: 1px solid gray;
+  color: gray;
+  font-size: 18px;
+  text-decoration: none;
+  padding: 8px;
 }
 
-.navigation{
+.button:hover {
+  background-color: white;
+  color: black;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.fs {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 7vw;
+}
+
+.navigation {
   z-index: 1;
   background-color: rgb(39, 39, 39);
 }
 
-.presentation{
-  margin-left: 16.5vw;
+.presentation {
+  margin-left: 16.8%;
   height: 100000px;
   border-left: 1px solid white;
   position: absolute;
 }
 
-.tButton{
-  display: none; 
+.tButton {
+  display: none;
   z-index: 1;
 }
 
-@media only screen and (max-width:767px) {
- .presentation{
-  margin: 0;
-  border: none;
- }
- .tButton{
-  display: block;
- }
+@media only screen and (max-width: 767px) {
+  .presentation {
+    margin: 0;
+    border: none;
+  }
+  .tButton {
+    display: block;
+  }
+  .position{
+    position: absolute;
+    top: 40px;
+  }
 }
 
-.position{
+.position {
   position: absolute;
-  bottom: 0;
+  bottom: 10%;
 }
 
-
+.glow{
+ 
+}
+s
