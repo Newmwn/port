@@ -89,6 +89,7 @@ a:hover {
   .position{
     position: absolute;
     top: 30%;
+    margin-left: 20px;
   }
 }
 

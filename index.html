@@ -13,7 +13,7 @@
             />
         <link rel="stylesheet" href="./style.css" />
     </head>
-    <body onload="myFunc()">
+    <body>
         <div class="d-flex justify-content-end position-fixed w-100 tButton">
             <button
                 class="tButton btn btn-dark"
@@ -29,7 +29,7 @@
             <div class="row m-0">
                 <div id="navigation"
                     class="p-0 m-0 col-sm-12 col-md-2 text-center navigation
-                    text-white position-fixed">
+                    text-white position-fixed collapse">
                     <ul class="list-unstyled">
                         <li class="logo mb-1">A.D</li>
                         <li class="mb-5">André Dias</li>
@@ -87,14 +87,18 @@
         <script>
             
             function myFunc(){
+                var size = window.innerWidth >=767 ? true : false;
                 var x = document.getElementById("navigation");
-            if(window.innerWidth<=767) x.classList.add("collapse")
-            else x.classList.remove("collapse");
+            if(size) x.classList.remove("collapse")
+            else x.classList.remove("show"),
+                 x.classList.add("collapse")
+            ;
             }
 
-            window.addEventListener("resize", () => {
-                myFunc();
-            });
+            window.onload=myFunc;
+            window.onresize=myFunc;
+           
+            
             
     </script>
         <script src="https://kit.fontawesome.com/eb209089bf.js" crossorigin="anonymous"></script>
